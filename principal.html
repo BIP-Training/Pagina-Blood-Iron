@@ -1,200 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blood & Iron</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Blood & Iron - No Pussies</title> 
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <!-- Menú de Navegación -->
-    <nav class="navbar">
-        <ul class="navbar-list">
-            <li><a href="principal.html">Inicio</a></li>
-            <li class="dropdown">
-                <a href="#">Origen ▾</a>
-                <ul class="dropdown-content">
-                  <li><a href="origen/capitulo1.html">Capítulo 1</a></li>
-                  <li><a href="origen/capitulo2.html">Capítulo 2</a></li>
-                  <li><a href="origen/capitulo3.html">Capítulo 3</a></li>
-                  <li><a href="origen/capitulo4.html">Capítulo 4</a></li>
-                  <li><a href="origen/capitulo5.html">Capítulo 5</a></li>
-                  <li><a href="origen/capitulo6.html">Capítulo 6</a></li>
-                  <li><a href="origen/capitulo7.html">Capítulo 7</a></li>
-                </ul>
-              </li>
-            
-              <li class="dropdown">
-                <a href="#">Filosofia de Entrenamiento ▾</a>
-                <ul class="dropdown-content">
-                  <li><a href="filosofia de entrenamiento/hit.html">HIT</a></li>
-                  <li><a href="filosofia de entrenamiento/heavyduty.html">HEAVY DUTY</a></li>
-                  <li><a href="filosofia de entrenamiento/blood&guts.html">BLOOD & GUTS</a></li>
-                </ul>
-              </li>  
+    <div id="menu-placeholder"></div>
 
-            <li><a href="entrenamientos.html">Entrenamientos</a></li>
-            <li><a href="recursos.html">Recursos</a></li>
-            <li><a href="consejos.html">Consejos</a></li>
-            <li class="dropdown">
-                <a href="#" class="dropbtn">Categorías ▾</a>
-                <ul class="dropdown-content">
-                    <li><a href="nutricion.html">Nutrición</a></li>
-                    <li><a href="motivacion.html">Motivación</a></li>
-                    <li><a href="recuperacion.html">Recuperación</a></li>
-                    <li><a href="tecnicas.html">Técnicas Avanzadas</a></li>
-                    <li><a href="historias.html">Historias de Atletas</a></li>
-                    <li><a href="equipamiento.html">Equipamiento</a></li>
-                    <li><a href="funcional.html">Entrenamiento Funcional</a></li>
-                    <li><a href="filosofia.html">Filosofía</a></li>
-                </ul>
-            </li>
-            <li><a href="bibliografia.html">Bibliografía</a></li>
-        </ul>
-    </nav>
-
-
-
-    <!-- Mural de Imágenes de Culturistas (con duplicado para animación infinita) -->
-    <section class="hero-images">
-        <div class="image-track">
-            <img src="img/mikementzer.portada.jpg" alt="Mike Mentzer">
-            <img src="img/dorianyates.portada.jpg" alt="Dorian Yates">
-            <img src="img/tomplatz.portada.jpg" alt="Tom Platz">
-            <img src="img/branchwarren.portada.jpg" alt="Branch Warren">
-            <img src="img/ronniecoleman.portada.jpg" alt="Ronnie Coleman">
-            <img src="img/kevinlevrone.portada.jpg" alt="Kevin Levrone">
-            <img src="img/greg.kovacs.portada.jpg" alt="Greg Kovacs">
-            
-            <!-- Duplicamos las imágenes para evitar corte feo -->
-            <img src="img/mikementzer.portada.jpg" alt="Mike Mentzer">
-            <img src="img/dorianyates.portada.jpg" alt="Dorian Yates">
-            <img src="img/tomplatz.portada.jpg" alt="Tom Platz">
-            <img src="img/branchwarren.portada.jpg" alt="Branch Warren">
-            <img src="img/ronniecoleman.portada.jpg" alt="Ronnie Coleman">
-            <img src="img/kevinlevrone.portada.jpg" alt="Kevin Levrone">
-            <img src="img/greg.kovacs.portada.jpg" alt="Greg Kovacs">
-        </div>
-    </section>
-
+    <main>
+        
+        <section class="hero-images">
+            <div class="image-track">
+                <img src="img/mikementzer.portada.jpg" alt="Mike Mentzer">
+                <img src="img/dorianyates.portada.jpg" alt="Dorian Yates">
+                <img src="img/tomplatz.portada.jpg" alt="Tom Platz">
+                <img src="img/branchwarren.portada.jpg" alt="Branch Warren">
+                <img src="img/ronniecoleman.portada.jpg" alt="Ronnie Coleman">
+                <img src="img/kevinlevrone.portada.jpg" alt="Kevin Levrone">
+                <img src="img/greg.kovacs.portada.jpg" alt="Greg Kovacs">
+                
+                <img src="img/mikementzer.portada.jpg" alt="Mike Mentzer">
+                <img src="img/dorianyates.portada.jpg" alt="Dorian Yates">
+                <img src="img/tomplatz.portada.jpg" alt="Tom Platz">
+                <img src="img/branchwarren.portada.jpg" alt="Branch Warren">
+                <img src="img/ronniecoleman.portada.jpg" alt="Ronnie Coleman">
+                <img src="img/kevinlevrone.portada.jpg" alt="Kevin Levrone">
+                <img src="img/greg.kovacs.portada.jpg" alt="Greg Kovacs">
+            </div>
+        </section>
     
-
-    <section class="hero-title">
-        <h1>Blood & Iron</h1>
-        <h2 class="subtitle">No pussies</h2>
-    </section>
-
-
-
-    <!-- Sección principal -->
-    <section class="main-section">
-        <div class="container">
-        <h2>¿Por qué creamos Blood & Iron?</h2>
-        <p>
-            Blood & Iron nace de la necesidad de rescatar la esencia del verdadero entrenamiento intenso.  
-            Esta página no está para contar historias bonitas ni para venderte un camino fácil.  
-            Hablamos de trabajo brutal, de mentalidad de acero, de filosofía de vida construida bajo cargas pesadas.  
-            Esta página es un tributo a los guerreros de hierro. No es para todos. Es para los pocos que entienden que el dolor forja carácter.
-        </p>
-        </div>
-    </section>
-  
-
-
-    <!-- Sección: De qué trata esta página -->
-    <section class="about-section">
-        <div class="container">
-        <h2>¿De qué trata esta página?</h2>
-        <p>
-            En Blood & Iron encontrarás contenido enfocado exclusivamente en el entrenamiento intenso, sin distracciones ni bullshit moderno.  
-            Exploramos métodos como HIT, Heavy Duty y Blood & Guts, respaldados por leyendas del culturismo.  
-            Aquí aprenderás la filosofía real del entrenamiento, los principios que separan a los atletas fisicoculturistas de los "influencers".  
-            Audios, videos, lecturas y recursos seleccionados con un solo filtro: intensidad brutal.
-        </p>
-        </div>
-    </section>
-  
-
-
-    <!-- Sección de Introducción a las demás secciones con tarjetas -->
-    <section class="intro-cards">
-        <h2>Lo que vas a encontrar aquí</h2>
-        <div class="card-container">    
-            <div class="card">
-                <img src="img/imagen1.jpg" alt="Entrenamiento HIT" class="card-img">
-                <h3>Entrenamientos Intensos</h3>
-                <p>Descubre rutinas que puedes adaptar a tu propia conveniencia. Entrenamientos que te llevarán al límite.</p>
-                <a href="entrenamientos.html" class="button">Explorar Entrenamientos</a>
+        <section class="hero-title">
+            <h1>Blood & Iron</h1>
+            <h2 class="subtitle">No pussies</h2>
+        </section>
+    
+        <section class="main-section">
+            <div class="container">
+                <h2>¿Por qué creamos Blood & Iron?</h2>
+                <p>Blood & Iron nace de la necesidad de rescatar la esencia del verdadero entrenamiento intenso. Esta página no está para contar historias bonitas ni para venderte un camino fácil. Hablamos de trabajo brutal, de mentalidad de acero, de filosofía de vida construida bajo cargas pesadas. Esta página es un tributo a los guerreros de hierro. No es para todos. Es para los pocos que entienden que el dolor forja carácter.</p>
             </div>
-            <div class="card">
-                <img src="img/imagen2.jpg" alt="Recursos para entrenamiento" class="card-img">
-                <h3>Recursos de Calidad</h3>
-                <p>Accede a videos, libros y audios recomendados por atletas que viven el entrenamiento intenso.</p>
-                <a href="recursos.html" class="button">Ver Recursos</a>
+        </section>
+      
+        <section class="about-section">
+            <div class="container">
+                <h2>¿De qué trata esta página?</h2>
+                <p>En Blood & Iron encontrarás contenido enfocado exclusivamente en el entrenamiento intenso, sin distracciones ni bullshit moderno. Exploramos métodos como HIT, Heavy Duty y Blood & Guts, respaldados por leyendas del culturismo. Aquí aprenderás la filosofía real del entrenamiento, los principios que separan a los atletas fisicoculturistas de los "influencers". Audios, videos, lecturas y recursos seleccionados con un solo filtro: intensidad brutal.</p>
             </div>
-            <div class="card">
-                <img src="img/imagen3.jpg" alt="Consejos de entrenamiento" class="card-img">
-                <h3>Consejos Prácticos</h3>
-                <p>Aprende las técnicas y estrategias que te ayudarán a maximizar tus resultados.</p>
-                <a href="consejos.html" class="button">Leer Consejos</a>
+        </section>
+      
+        <section class="intro-cards">
+            <h2>Lo que vas a encontrar aquí</h2>
+            <div class="card-container">    
+                <div class="card">
+                    <img src="img/imagen1.jpg" alt="Entrenamiento HIT" class="card-img">
+                    <h3>Entrenamientos Intensos</h3>
+                    <p>Descubre rutinas que puedes adaptar a tu propia conveniencia. Entrenamientos que te llevarán al límite.</p>
+                    <a href="entrenamientos.html" class="button">Explorar Entrenamientos</a>
+                </div>
+                <div class="card">
+                    <img src="img/imagen2.jpg" alt="Recursos para entrenamiento" class="card-img">
+                    <h3>Recursos de Calidad</h3>
+                    <p>Accede a videos, libros y audios recomendados por atletas que viven el entrenamiento intenso.</p>
+                    <a href="recursos.html" class="button">Ver Recursos</a>
+                </div>
+                <div class="card">
+                    <img src="img/imagen3.jpg" alt="Consejos de entrenamiento" class="card-img">
+                    <h3>Consejos Prácticos</h3>
+                    <p>Aprende las técnicas y estrategias que te ayudarán a maximizar tus resultados.</p>
+                    <a href="consejos.html" class="button">Leer Consejos</a>
+                </div>
+                <div class="card">
+                    <img src="img/imagen4.jpg" alt="Nutrición para guerreros" class="card-img">
+                    <h3>Nutrición para Guerreros</h3>
+                    <p>Conoce las dietas y suplementos clave para potenciar tus entrenamientos.</p>
+                    <a href="nutricion.html" class="button">Ver Nutrición</a>
+                </div>
+                <div class="card">
+                    <img src="img/imagen5.jpg" alt="Motivación" class="card-img">
+                    <h3>Motivación y Mentalidad</h3>
+                    <p>Fortalece tu mente para soportar los entrenamientos más duros.</p>
+                    <a href="motivacion.html" class="button">Ver Motivación</a>
+                </div>
+                <div class="card">
+                    <img src="img/imagen6.jpg" alt="Recuperación" class="card-img">
+                    <h3>Recuperación y Prevención</h3>
+                    <p>Evita lesiones y optimiza tu recuperación para entrenar más fuerte.</p>
+                    <a href="recuperacion.html" class="button">Ver Recuperación</a>
+                </div>
+                <div class="card">
+                    <img src="img/imagen7.jpg" alt="Técnicas avanzadas" class="card-img">
+                    <h3>Técnicas de Entrenamiento Avanzadas</h3>
+                    <p>Descubre técnicas avanzadas para maximizar tu rendimiento y romper tus límites.</p>
+                    <a href="tecnicas.html" class="button">Ver Técnicas Avanzadas</a>
+                </div>
+                <div class="card">
+                    <img src="img/imagen8.jpg" alt="Historias de atletas" class="card-img">
+                    <h3>Historias de Atletas</h3>
+                    <p>Inspírate con testimonios de guerreros del hierro que han superado todo tipo de barreras.</p>
+                    <a href="historias.html" class="button">Ver Historias</a>
+                </div>
+                <div class="card">
+                    <img src="img/imagen9.jpg" alt="Equipamiento de entrenamiento" class="card-img">
+                    <h3>Equipamiento y Herramientas</h3>
+                    <p>Conoce el mejor equipamiento para entrenar con eficacia y seguridad.</p>
+                    <a href="equipamiento.html" class="button">Ver Equipamiento</a>
+                </div>
+                <div class="card">
+                    <img src="img/imagen10.jpg" alt="Entrenamiento funcional" class="card-img">
+                    <h3>Entrenamiento Funcional</h3>
+                    <p>Explora movimientos funcionales que te ayudarán a mejorar fuerza, movilidad y agilidad.</p>
+                    <a href="funcional.html" class="button">Ver Entrenamiento Funcional</a>
+                </div>
+                <div class="card">
+                    <img src="img/imagen11.jpg" alt="Filosofía del entrenamiento" class="card-img">
+                    <h3>Filosofía del Entrenamiento</h3>
+                    <p>Profundiza en las filosofías que sustentan el entrenamiento intenso y la superación personal.</p>
+                    <a href="filosofia.html" class="button">Ver Filosofía</a>
+                </div>
             </div>
-            <!-- Nuevas categorías con imágenes -->
-            <div class="card">
-                <img src="img/imagen4.jpg" alt="Nutrición para guerreros" class="card-img">
-                <h3>Nutrición para Guerreros</h3>
-                <p>Conoce las dietas y suplementos clave para potenciar tus entrenamientos.</p>
-                <a href="nutricion.html" class="button">Ver Nutrición</a>
-            </div>
-            <div class="card">
-                <img src="img/imagen5.jpg" alt="Motivación" class="card-img">
-                <h3>Motivación y Mentalidad</h3>
-                <p>Fortalece tu mente para soportar los entrenamientos más duros.</p>
-                <a href="motivacion.html" class="button">Ver Motivación</a>
-            </div>
-            <div class="card">
-                <img src="img/imagen6.jpg" alt="Recuperación" class="card-img">
-                <h3>Recuperación y Prevención</h3>
-                <p>Evita lesiones y optimiza tu recuperación para entrenar más fuerte.</p>
-                <a href="recuperacion.html" class="button">Ver Recuperación</a>
-            </div>
-            <div class="card">
-                <img src="img/imagen7.jpg" alt="Técnicas avanzadas" class="card-img">
-                <h3>Técnicas de Entrenamiento Avanzadas</h3>
-                <p>Descubre técnicas avanzadas para maximizar tu rendimiento y romper tus límites.</p>
-                <a href="tecnicas.html" class="button">Ver Técnicas Avanzadas</a>
-            </div>
-            <div class="card">
-                <img src="img/imagen8.jpg" alt="Historias de atletas" class="card-img">
-                <h3>Historias de Atletas</h3>
-                <p>Inspírate con testimonios de guerreros del hierro que han superado todo tipo de barreras.</p>
-                <a href="historias.html" class="button">Ver Historias</a>
-            </div>
-            <div class="card">
-                <img src="img/imagen9.jpg" alt="Equipamiento de entrenamiento" class="card-img">
-                <h3>Equipamiento y Herramientas</h3>
-                <p>Conoce el mejor equipamiento para entrenar con eficacia y seguridad.</p>
-                <a href="equipamiento.html" class="button">Ver Equipamiento</a>
-            </div>
-            <div class="card">
-                <img src="img/imagen10.jpg" alt="Entrenamiento funcional" class="card-img">
-                <h3>Entrenamiento Funcional</h3>
-                <p>Explora movimientos funcionales que te ayudarán a mejorar fuerza, movilidad y agilidad.</p>
-                <a href="funcional.html" class="button">Ver Entrenamiento Funcional</a>
-            </div>
-            <div class="card">
-                <img src="img/imagen11.jpg" alt="Filosofía del entrenamiento" class="card-img">
-                <h3>Filosofía del Entrenamiento</h3>
-                <p>Profundiza en las filosofías que sustentan el entrenamiento intenso y la superación personal.</p>
-                <a href="filosofia.html" class="button">Ver Filosofía</a>
-            </div>
-        </div>
-        <p class="intro-note">Prepara tu mente y cuerpo para lo que viene. Aquí no hay excusas, solo resultados.</p>
-    </section>
+            <p class="intro-note">Prepara tu mente y cuerpo para lo que viene. Aquí no hay excusas, solo resultados.</p>
+        </section>
 
+    </main>
 
-
-    <!-- Pie de página -->
     <footer>
         <p>&copy; 2025 Blood & Iron - Todos los derechos reservados.</p>
     </footer>
